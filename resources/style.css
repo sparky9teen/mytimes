@@ -1,0 +1,22 @@
+.masthead {
+  display: flex;
+  align-items: center;
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
+
+.logo {
+  height: 60px;
+  width: 70px;
+}
+
+h1 {
+  color: MediumAquamarine;
+  margin-left: 15px;
+}
+
+.toplinks {
+  text-decoration: underline;
+}
