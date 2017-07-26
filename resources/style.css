@@ -1,22 +1,35 @@
-.masthead {
+header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
+  padding-bottom: 10px;
   border-bottom: 1px solid black;
 }
 
-.logo {
-  height: 60px;
-  width: 70px;
+div.logo {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
 }
 
-h1 {
+.logo span {
   color: MediumAquamarine;
-  margin-left: 15px;
+  padding-left: 10px;
 }
 
-.toplinks {
+.links {
+  padding-right: 30px;
+}
+
+.links span {
+  flex-direction: row;
+  color: black;
   text-decoration: underline;
+  padding: 0 10px;
 }
