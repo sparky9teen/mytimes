@@ -1,98 +1,140 @@
 header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   position: fixed;
   z-index: 1;
+  height: 80px;
   width: 100%;
+  border-bottom: 1px solid black;
+  background-color: white;
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
-  padding-bottom: 10px;
-  border-bottom: 1px solid black;
 }
 
-div.logo {
+.logo {
   display: flex;
   align-items: center;
+  flex-grow: 1;
   padding-left: 30px;
-  border: 1px solid black;
+}
+
+.logo img {
+  height: 60px;
+  width: 70px;
+  margin-right: 12px;
 }
 
 .logo span {
   color: MediumAquamarine;
-  padding-left: 10px;
-}
-
-.links {
   padding-right: 30px;
-  border: 1px solid black;
 }
 
-.links span {
-  flex-direction: row;
+header nav {
+  padding-right: 40px;
+}
+
+nav span {
+  display: inline-block;
+  padding: 20px 10px;
+}
+
+a {
   color: black;
   text-decoration: underline;
-  padding: 0 10px;
 }
 
-div {
-  border: 1px solid black;
+body {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
 }
 
-.columns {
+.allcontent {
   display: flex;
+  width: 1232px;
+  margin: 0 auto 78px auto;
   padding-top: 116px;
 }
 
 .column {
   display: flex;
-  flex-flow: column wrap;
-}
-
-.headline {
-  display: flex;
-  font-family: Georgia;
-  font-weight: bold;
-  font-size: 30px;
-  color: white;
-}
-
-h2 {
-
+  flex-direction: column;
+  margin-right: 32px;
 }
 
 .column.large {
   width: 630px;
 }
 
-.concert.headline {
-  font-size: 40px;
-  background-image: url(./images/img-story-main.png);
-}
-
-.earth.headline {
-  background-image: url(./images/img-story-2.png);
-}
-
-.camera.headline {
-  background-image: url(./images/img-story-3.png);
-}
-
 .column.medium {
   width: 300px;
-}
-
-.cat.headline {
-  background-image: url(./images/img-story-1.png);
 }
 
 .column.small {
   width: 240px;
 }
 
-.story {
+div {
+  display: block;
+}
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  margin-top: 15px;
   font-family: Georgia;
-  font-size: 17px;
-  color: black;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+.concert.overlay {
+  background-image: url(./images/img-story-main.png);
+  width: 630px;
+  font-size: 40px;
+  text-align: left;
+  margin-top: 0;
+}
+
+.concert.overlay span {
+  margin-left: 20px;
+}
+
+.earth.overlay {
+  background-image: url(./images/img-story-2.png);
+}
+
+.camera.overlay {
+  background-image: url(./images/img-story-3.png);
+}
+
+.cat.overlay {
+  background-image: url(./images/img-story-1.png);
+}
+
+p {
+  display: block;
+}
+
+h2 {
+  display: block;
+  font-family: Georgia;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.articles {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
 }
