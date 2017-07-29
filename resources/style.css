@@ -48,6 +48,7 @@ body {
   font-family: Georgia;
   font-size: 17px;
   color: black;
+  margin: 0;
 }
 
 .allcontent {
@@ -155,4 +156,34 @@ h3 {
   padding: 11px 20px;
   border-bottom: 1px solid black;
   background-color: Whitesmoke;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 325px;
+  font-family: Verdana;
+  font-size: 12px;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+}
+
+.title {
+  display: inline-block;
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  padding-right: 25px;
+  border-right: 2px solid white;
+}
+
+footer nav {
+  display: inline-block;
+  padding-left: 25px;
 }
